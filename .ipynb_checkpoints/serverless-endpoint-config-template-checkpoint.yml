@@ -58,10 +58,10 @@ Resources:
           InitialVariantWeight: 1.0
           #InstanceType: !Ref EndpointInstanceType
           ModelName: !GetAtt Model.ModelName
-          VariantName: AllTraffic
           ServerlessConfig:
             MemorySizeInMB: 4096
             MaxConcurrency: 1
+          VariantName: AllTraffic
       #DataCaptureConfig:
       #    EnableCapture: !Ref EnableDataCapture 
       #    InitialSamplingPercentage: !Ref SamplingPercentage
