@@ -48,9 +48,9 @@ Resources:
     Properties:
       Containers:
          - ModelPackageName: !Ref ModelPackageName
-      ExecutionRoleArn: !Ref ModelExecutionRoleArn
+      ExecutionRoleArn: !Ref ModelExecutionRoleAr
       
- EndpointConfig:
+  EndpointConfig:
     Type: AWS::SageMaker::EndpointConfig
     Properties:
       ProductionVariants:
@@ -78,3 +78,4 @@ Resources:
     Properties:
       EndpointName: !Sub ${SageMakerProjectName}-${StageName}
       EndpointConfigName: !GetAtt EndpointConfig.EndpointConfigName
+      
